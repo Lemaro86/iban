@@ -245,25 +245,40 @@ const menu = {
 /* ---------------- Слайдшоу фото по наведению (img-rouletka) ---------------- */
 (function initImgRouletka() {
   const roulettes = document.querySelectorAll('.img-rouletka');
-  const STEP_MS = 900;
+  const STEP_MS = 300;
 
   roulettes.forEach((el) => {
-    const imgs = el.querySelectorAll('img');
-    if (!imgs.length) return;
+    const items = el.querySelectorAll('img, video');
+    if (!items.length) return;
 
+    const video = el.querySelector('video');
     let index = 0;
     let timer = null;
 
     const show = (i) => {
-      imgs.forEach((img, idx) => img.classList.toggle('is-active', idx === i));
+      items.forEach((item, idx) => item.classList.toggle('is-active', idx === i));
+    };
+
+    // Переключение мгновенное (без фейда). Когда очередь доходит до видео
+    // (последний элемент, если оно есть) — слайдшоу ставится на паузу,
+    // видео проигрывается один раз, а после его окончания цикл идёт с начала.
+    const next = () => {
+      index++;
+      if (video && index === items.length - 1) {
+        clearInterval(timer);
+        timer = null;
+        show(index);
+        video.currentTime = 0;
+        video.play();
+        return;
+      }
+      if (index >= items.length) index = 0;
+      show(index);
     };
 
     const start = () => {
       if (timer) return;
-      timer = setInterval(() => {
-        index = (index + 1) % imgs.length;
-        show(index);
-      }, STEP_MS);
+      timer = setInterval(next, STEP_MS);
     };
 
     const stop = () => {
@@ -271,7 +286,19 @@ const menu = {
       timer = null;
       index = 0;
       show(0);
+      if (video) {
+        video.pause();
+        video.currentTime = 0;
+      }
     };
+
+    if (video) {
+      video.addEventListener('ended', () => {
+        index = 0;
+        show(0);
+        start();
+      });
+    }
 
     el.addEventListener('mouseenter', start);
     el.addEventListener('mouseleave', stop);

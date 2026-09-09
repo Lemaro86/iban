@@ -161,18 +161,19 @@ html.reveal-armed .reveal.in-view {
     overflow: hidden;
 }
 
-.img-rouletka img {
+.img-rouletka img,
+.img-rouletka video {
     position: absolute;
     inset: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
     opacity: 0;
-    transition: opacity .7s cubic-bezier(.65, 0, .35, 1);
     pointer-events: none;
 }
 
-.img-rouletka img.is-active {
+.img-rouletka img.is-active,
+.img-rouletka video.is-active {
     opacity: 1;
 }
 
@@ -446,6 +447,17 @@ html.reveal-armed .reveal.in-view {
     max-width: 100%;
     margin: 0 auto;
     width: 100%;
+}
+
+.main-left img {
+    display: block;
+    width: 1000px;
+    height: auto;
+    transition: transform .35s ease;
+}
+
+.main-left img:hover {
+    transform: scale(.92);
 }
 
 .eyebrow {
