@@ -1,12 +1,10 @@
 /* ================================================================
-   BANI — ровно 2 экрана по горизонтали (hero → franchise).
-   На экране hero любой скролл трекпадом/колесом уводит вправо, на
-   экран franchise. Внутри franchise — обычный вертикальный скролл;
-   докрутка вверх до упора возвращает влево, на hero.
+   BANI — один длинный экран, скролл только по горизонтали.
+   Любой скролл колесом/трекпадом (в т.ч. вертикальный) переводится
+   в горизонтальный проезд по треку.
    ================================================================ */
 
 (function initScreens() {
-  const franchise = document.getElementById('franchise');
   const clamp = (v, min, max) => Math.max(min, Math.min(max, v));
   let target = window.scrollX || window.pageXOffset;
   let ticking = false;
@@ -19,47 +17,26 @@
       requestAnimationFrame(() => { window.scrollTo({ left: target, behavior: 'auto' }); ticking = false; });
     }
   }
-  function goTo(screen) { // 0 = hero, 1 = franchise
-    target = screen * window.innerWidth;
-    window.scrollTo({ left: target, behavior: 'smooth' });
-  }
 
   function onWheel(e) {
-    const onHero = (window.scrollX || window.pageXOffset) < window.innerWidth - 2;
-    const atTop = franchise ? franchise.scrollTop <= 0 : true;
-    if (onHero || (atTop && e.deltaY < 0 && Math.abs(e.deltaY) >= Math.abs(e.deltaX))) {
-      e.preventDefault();
-      scrollHoriz(Math.abs(e.deltaX) > Math.abs(e.deltaY) ? e.deltaX : e.deltaY);
-    }
-    // иначе — обычный вертикальный скролл внутри franchise, без вмешательства
+    e.preventDefault();
+    scrollHoriz(Math.abs(e.deltaX) > Math.abs(e.deltaY) ? e.deltaX : e.deltaY);
   }
   window.addEventListener('wheel', onWheel, { passive: false });
   window.addEventListener('scroll', () => { target = window.scrollX || window.pageXOffset; });
   window.addEventListener('resize', () => { target = clamp(target, 0, maxScroll()); });
 
   document.addEventListener('keydown', (e) => {
-    if (['ArrowRight', 'PageDown'].includes(e.key)) { e.preventDefault(); goTo(1); }
-    if (['ArrowLeft', 'PageUp'].includes(e.key)) { e.preventDefault(); goTo(0); }
+    if (['ArrowRight', 'PageDown'].includes(e.key)) { e.preventDefault(); scrollHoriz(window.innerWidth * .8); }
+    if (['ArrowLeft', 'PageUp'].includes(e.key)) { e.preventDefault(); scrollHoriz(-window.innerWidth * .8); }
   });
 
   const navLogo = document.getElementById('navLogo');
-  if (navLogo) navLogo.addEventListener('click', (e) => { e.preventDefault(); goTo(0); });
-  const navCta = document.getElementById('navCta');
-  if (navCta) navCta.addEventListener('click', (e) => {
+  if (navLogo) navLogo.addEventListener('click', (e) => {
     e.preventDefault();
-    goTo(1);
-    setTimeout(() => document.getElementById('cta')?.scrollIntoView({ behavior: 'smooth' }), 350);
+    target = 0;
+    window.scrollTo({ left: 0, behavior: 'smooth' });
   });
-
-  // прямая ссылка вида #economics при загрузке — сначала уйти на экран 2, потом докрутить
-  if (location.hash.length > 1) {
-    const el = document.querySelector(location.hash);
-    if (el && franchise && franchise.contains(el)) {
-      window.scrollTo(0, 0);
-      target = 0;
-      setTimeout(() => { goTo(1); setTimeout(() => el.scrollIntoView({ behavior: 'smooth' }), 400); }, 50);
-    }
-  }
 })();
 
 /* ---------------- DnD: стикеры, декоративные объекты, конструктор ---------------- */

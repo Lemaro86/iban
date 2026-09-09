@@ -103,16 +103,10 @@ button, input, select, textarea {
     padding: 0 32px;
 }
 
-/* ---------- ровно 2 экрана в горизонтальном треке ---------- */
+/* ---------- 1 длинный экран, ширина растёт по контенту ---------- */
 .panel-hero {
-    width: 100vw;
-}
-
-.panel-franchise {
-    width: 100vw;
-    overflow-y: auto;
-    overflow-x: hidden;
-    -webkit-overflow-scrolling: touch;
+    min-width: 100vw;
+    width: max-content;
 }
 
 /* ---------- анимации появления при скролле ---------- */
@@ -494,6 +488,13 @@ html.reveal-armed .reveal.in-view {
     font-size: 240px;
     line-height: .86;
     letter-spacing: -2px;
+    white-space: nowrap;
+}
+
+/* резерв места под будущие элементы справа от галереи */
+.hero-future {
+    flex-shrink: 0;
+    width: 800px;
 }
 
 .hero-lede {
@@ -554,87 +555,6 @@ html.reveal-armed .reveal.in-view {
     }
 }
 
-/* ============================================================ MARQUEE (бегущая строка вверху 2-го экрана) */
-.marquee-band {
-    background: var(--orange);
-    overflow: hidden;
-    padding: 3px 0 35px;
-    border-bottom: 4px solid var(--ink);
-}
-
-.marquee-track {
-    display: flex;
-    width: max-content;
-    gap: 30px;
-    animation: scrollLeft 22s linear infinite;
-}
-
-.marquee-track span {
-    font-family: var(--f-display);
-    font-weight: 900;
-    text-transform: uppercase;
-    font-size: 26px;
-    letter-spacing: -.3px;
-    color: var(--ink);
-    white-space: nowrap;
-}
-
-@keyframes scrollLeft {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(-50%);
-    }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .marquee-track {
-        animation: none;
-    }
-}
-
-/* ============================================================ PROOF / ABOUT */
-.proof {
-    background: white;
-    padding: 100px 0;
-}
-
-.proof .wrap {
-    display: grid;
-    grid-template-columns:1fr 1fr;
-    gap: 60px;
-    align-items: center;
-}
-
-.proof-media {
-    height: 420px;
-    border-radius: 28px;
-    border: 4px solid var(--ink);
-    background-size: cover;
-    background-position: center;
-    box-shadow: 10px 10px 0 var(--ink);
-}
-
-.proof-copy h2 {
-    font-family: var(--f-display);
-    font-weight: 900;
-    text-transform: uppercase;
-    font-size: clamp(30px, 4vw, 46px);
-    line-height: 1;
-    letter-spacing: -1px;
-    margin-bottom: 18px;
-}
-
-.proof-copy p {
-    font-size: 16px;
-    font-weight: 600;
-    color: #5c4530;
-    line-height: 1.55;
-    margin-bottom: 12px;
-    max-width: 480px;
-}
-
 .stat-strip {
     display: flex;
     gap: 36px;
@@ -657,16 +577,6 @@ html.reveal-armed .reveal.in-view {
     color: var(--muted);
     text-transform: uppercase;
     letter-spacing: .3px;
-}
-
-@media (max-width: 860px) {
-    .proof .wrap {
-        grid-template-columns:1fr;
-    }
-
-    .proof-media {
-        height: 280px;
-    }
 }
 
 /* ============================================================ ECONOMICS */
