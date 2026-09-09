@@ -150,15 +150,11 @@ html.reveal-armed .reveal.in-view {
 }
 
 .nav-logo {
-    font-family: var(--f-display);
-    font-weight: 900;
-    font-size: 26px;
-    letter-spacing: -0.5px;
-    background: var(--paper);
-    border: 3px solid var(--ink);
-    border-radius: 40px;
-    padding: 8px 20px 6px;
-    box-shadow: 4px 4px 0 var(--ink);
+    width: 100px;
+}
+
+.img-rouletka {
+
 }
 
 .nav-links {
@@ -552,7 +548,7 @@ html.reveal-armed .reveal.in-view {
 
 /* ============================================================ PROOF / ABOUT */
 .proof {
-    background: var(--cream);
+    background: white;
     padding: 100px 0;
 }
 
