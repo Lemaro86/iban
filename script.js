@@ -242,6 +242,42 @@ const menu = {
   renderMenu(cats[0]);
 })();
 
+/* ---------------- Слайдшоу фото по наведению (img-rouletka) ---------------- */
+(function initImgRouletka() {
+  const roulettes = document.querySelectorAll('.img-rouletka');
+  const STEP_MS = 900;
+
+  roulettes.forEach((el) => {
+    const imgs = el.querySelectorAll('img');
+    if (!imgs.length) return;
+
+    let index = 0;
+    let timer = null;
+
+    const show = (i) => {
+      imgs.forEach((img, idx) => img.classList.toggle('is-active', idx === i));
+    };
+
+    const start = () => {
+      if (timer) return;
+      timer = setInterval(() => {
+        index = (index + 1) % imgs.length;
+        show(index);
+      }, STEP_MS);
+    };
+
+    const stop = () => {
+      clearInterval(timer);
+      timer = null;
+      index = 0;
+      show(0);
+    };
+
+    el.addEventListener('mouseenter', start);
+    el.addEventListener('mouseleave', stop);
+  });
+})();
+
 /* ---------------- Форма заявки (демо, без бэкенда) ---------------- */
 (function initLeadForm() {
   const form = document.getElementById('leadForm');
