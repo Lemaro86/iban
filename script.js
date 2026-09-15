@@ -45,7 +45,6 @@ function setupDraggable(el, bounds) {
     Draggable.create(el, {
       type: 'x,y',
       bounds,
-      inertia: !!window.InertiaPlugin,
       edgeResistance: 0.6,
       onPress() { el.style.zIndex = 999; },
     });
@@ -81,7 +80,7 @@ function setupDraggable(el, bounds) {
 
 (function initDragObjects() {
   try {
-    if (window.gsap && window.Draggable) gsap.registerPlugin(Draggable, window.InertiaPlugin);
+    if (window.gsap && window.Draggable) gsap.registerPlugin(Draggable);
   } catch (e) { /* игнорируем — сработает фолбэк */ }
 
   document.querySelectorAll('[data-drag]').forEach((el) => {
@@ -105,7 +104,7 @@ function setupDraggable(el, bounds) {
 
   const hasGsap = window.gsap && window.Draggable;
   if (hasGsap) {
-    try { gsap.registerPlugin(Draggable, window.InertiaPlugin); } catch (e) {}
+    try { gsap.registerPlugin(Draggable); } catch (e) {}
   }
 
   pieces.forEach((piece) => {
@@ -114,7 +113,6 @@ function setupDraggable(el, bounds) {
         Draggable.create(piece, {
           type: 'x,y',
           bounds: stage,
-          inertia: !!window.InertiaPlugin,
           edgeResistance: 0.65,
           onPress() { piece.style.zIndex = 60; },
           onDragEnd() {
