@@ -41,16 +41,6 @@
 
 /* ---------------- DnD: стикеры, декоративные объекты, конструктор ---------------- */
 function setupDraggable(el, bounds) {
-  if (window.gsap && window.Draggable) {
-    Draggable.create(el, {
-      type: 'x,y',
-      bounds,
-      edgeResistance: 0.6,
-      onPress() { el.style.zIndex = 999; },
-    });
-    return;
-  }
-  // Фолбэк без GSAP: обычный drag мышью/тачем
   let dragging = false, offX = 0, offY = 0;
   const parent = bounds || el.offsetParent || document.body;
   function down(e) {
@@ -79,10 +69,6 @@ function setupDraggable(el, bounds) {
 }
 
 (function initDragObjects() {
-  try {
-    if (window.gsap && window.Draggable) gsap.registerPlugin(Draggable);
-  } catch (e) { /* игнорируем — сработает фолбэк */ }
-
   document.querySelectorAll('[data-drag]').forEach((el) => {
     setupDraggable(el, el.closest('.panel'));
   });
@@ -102,28 +88,7 @@ function setupDraggable(el, bounds) {
     if (msg) msg.classList.toggle('show', placed === pieces.length);
   }
 
-  const hasGsap = window.gsap && window.Draggable;
-  if (hasGsap) {
-    try { gsap.registerPlugin(Draggable); } catch (e) {}
-  }
-
   pieces.forEach((piece) => {
-    if (hasGsap) {
-      try {
-        Draggable.create(piece, {
-          type: 'x,y',
-          bounds: stage,
-          edgeResistance: 0.65,
-          onPress() { piece.style.zIndex = 60; },
-          onDragEnd() {
-            piece.classList.toggle('placed', Draggable.hitTest(piece, zone, '40%'));
-            checkComplete();
-          },
-        });
-        return;
-      } catch (e) { /* падаем в фолбэк ниже */ }
-    }
-    // Фолбэк без GSAP
     let dragging = false, offX = 0, offY = 0;
     piece.style.position = 'absolute';
     function down(e) {
