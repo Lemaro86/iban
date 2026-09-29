@@ -1216,6 +1216,73 @@ strong {
     position: relative;
 }
 
+.picture-box-2 {
+    overflow: hidden;
+}
+
+.too-img-stripe {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 160%;
+    height: 7.6vh;
+    padding: 0.53vh 0;
+    box-sizing: border-box;
+    background: var(--white);
+    transform: translate(-50%, 0) rotate(10deg);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.too-img-stripe-track {
+    display: flex;
+    align-items: center;
+    gap: 2.28vh;
+    padding-right: 2.28vh;
+    white-space: nowrap;
+    animation: stripeMarquee 9s linear infinite;
+}
+
+.too-img-stripe-item {
+    font-family: Helvetica Neue Condensed, sans-serif;
+    font-weight: 900;
+    font-size: 6.07vh;
+    line-height: 1;
+    letter-spacing: 0.15vh;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: var(--vicio-red);
+    -webkit-text-stroke: 0.15vh var(--vicio-red);
+    position: relative;
+}
+
+.too-img-stripe-item.is-outline {
+    color: transparent;
+    -webkit-text-stroke: 0.15vh var(--vicio-red);
+}
+
+.too-img-stripe-item sup {
+    font-size: .11em;
+    opacity: .3;
+    margin-left: 0.15vh;
+    vertical-align: top;
+    color: var(--vicio-red);
+    -webkit-text-stroke: 0;
+    position: absolute;
+    top: 1.06vh;
+    right: -1.14vh;
+}
+
+@keyframes stripeMarquee {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
 .sticker-3 {
     z-index: 500;
     cursor: grab;
