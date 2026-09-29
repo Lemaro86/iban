@@ -181,11 +181,10 @@ strong {
 }
 
 .bar-left {
-    grid-column-gap: 2.16vh;
-    grid-row-gap: 2.16vh;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     display: flex;
+    margin-right: 200px;
 }
 
 .main-content {
@@ -648,7 +647,7 @@ strong {
 
 .burger-cities {
     z-index: 19;
-    background-image: url("../img/burger-1-tiny.png");
+    background-image: url("../img/box.png");
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: contain;
@@ -1587,6 +1586,7 @@ strong {
     max-width: 20.16vh;
     height: 3.44vh;
     display: flex;
+    margin-right: 20px;
 }
 
 .mobile {
