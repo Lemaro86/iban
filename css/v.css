@@ -170,7 +170,7 @@ strong {
 }
 
 .vicio {
-    background-image: url("../images/vicio2.svg");
+    background-image: url("../img/logo.png");
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: contain;
@@ -258,6 +258,7 @@ strong {
     width: 78.27vh;
     display: flex;
     position: relative;
+    margin-top: 100px;
 }
 
 .div-block-2 {
@@ -306,12 +307,35 @@ strong {
 }
 
 .collection-text {
-    background-image: url("../images/collection.svg");
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    background-size: contain;
     width: 100%;
     height: 100%;
+    font-family: Helvetica Neue Condensed, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: var(--black);
+    font-size: 8.5vh;
+    line-height: 10.96vh;
+    transition: transform 0.5s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.collection-line-default {
+    transform: translateY(0%);
+}
+
+.collection-line-hover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateY(-100%);
+}
+
+.collection-link-block:hover .collection-line-default {
+    transform: translateY(120%);
+}
+
+.collection-link-block:hover .collection-line-hover {
+    transform: translateY(0%);
 }
 
 .collection-link-wrapper {
@@ -441,6 +465,8 @@ strong {
 
 .row-menu {
     justify-content: flex-start;
+    align-items: center;
+    gap: 1.5vh;
     width: 100%;
     display: flex;
 }
@@ -517,7 +543,7 @@ strong {
 }
 
 .div-block-14 {
-    background-image: url("../images/icon-world.svg");
+    background-image: url("../img/icon-world.svg");
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: contain;
@@ -533,15 +559,46 @@ strong {
     display: flex;
 }
 
-.arrown-cities {
-    background-image: url("../images/arrow.svg");
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 1.94vh;
-    height: 1.94vh;
-    position: absolute;
-    inset: auto auto 0% 0%;
+.cities-icon-stack {
+    flex-shrink: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6vh;
+    display: flex;
+}
+
+.cities-arrow {
+    display: inline-block;
+    font-size: 2.4vh;
+    line-height: 1;
+    color: var(--black);
+    transform: rotate(-45deg);
+    transition: transform 0.35s ease;
+}
+
+.link-block:hover .cities-arrow,
+.collection-link-block:hover .cities-arrow {
+    transform: rotate(45deg);
+}
+
+.cities-frame {
+    flex-shrink: 0;
+    box-sizing: border-box;
+    width: 7vh;
+    height: 7vh;
+    padding: 0.8vh;
+    border: 1px solid var(--black);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.cities-frame img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: contain;
 }
 
 .burger-cities {
@@ -694,7 +751,9 @@ strong {
 }
 
 .collection-scroll-wrapper {
-    width: 141.92vh;
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 .image-3 {
@@ -718,16 +777,72 @@ strong {
 .cities-link-wrapper {
     height: 18.69vh;
     overflow: hidden;
+    position: relative;
 }
 
 .vicio-cities {
-    background-image: url("../img/pizeria.svg");
-    background-position: 0 0;
-    background-repeat: no-repeat;
+    background: url("../img/pizeria.svg") 0 0  no-repeat;
     background-size: contain;
     width: 123.34vh;
     height: 18.69vh;
 }
+
+.cities-line {
+    transition: transform 0.5s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.cities-line-default {
+    transform: translateY(0%);
+}
+
+.cities-line-hover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateY(-100%);
+}
+
+.link-block:hover .cities-line-default {
+    transform: translateY(100%);
+}
+
+.link-block:hover .cities-line-hover {
+    transform: translateY(0%);
+}
+
+.cities-link-wrapper .spark {
+    position: absolute;
+    width: 3.02vh;
+    height: 3.02vh;
+    border-radius: 50%;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity 0.35s ease, transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+    pointer-events: none;
+}
+
+.link-block:hover .cities-link-wrapper .spark {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.link-block:hover .cities-link-wrapper .spark:nth-child(3) { transition-delay: 0.05s; }
+.link-block:hover .cities-link-wrapper .spark:nth-child(4) { transition-delay: 0.10s; }
+.link-block:hover .cities-link-wrapper .spark:nth-child(5) { transition-delay: 0.15s; }
+.link-block:hover .cities-link-wrapper .spark:nth-child(6) { transition-delay: 0.08s; }
+.link-block:hover .cities-link-wrapper .spark:nth-child(7) { transition-delay: 0.20s; }
+.link-block:hover .cities-link-wrapper .spark:nth-child(8) { transition-delay: 0.12s; }
+.link-block:hover .cities-link-wrapper .spark:nth-child(9) { transition-delay: 0.18s; }
+.link-block:hover .cities-link-wrapper .spark:nth-child(10) { transition-delay: 0.07s; }
+
+.cities-link-wrapper .spark:nth-child(3) { top: 0;  left: 4%; }
+.cities-link-wrapper .spark:nth-child(4) { top: 11%; left: 30%; }
+.cities-link-wrapper .spark:nth-child(5) { top: 10%; left: 50%; }
+.cities-link-wrapper .spark:nth-child(6) { top: 10%; left: 97%; }
+.cities-link-wrapper .spark:nth-child(7) { top: 71%; left: 10%; }
+.cities-link-wrapper .spark:nth-child(8) { top: 61%; left: 64%; }
+.cities-link-wrapper .spark:nth-child(9) { top: 0; left: 65%; }
+.cities-link-wrapper .spark:nth-child(10) { top: 18%; left: 82%; }
 
 .vicio-fires {
     z-index: 1;
@@ -3755,7 +3870,7 @@ strong {
 }
 
 .jobs-fire-1 {
-    background-image: url("../images/fire.gif");
+    background-image: url("../img/fire.gif");
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: contain;
@@ -4223,7 +4338,7 @@ strong {
 }
 
 .jobs-fire-1-mobile {
-    background-image: url("../images/fire.gif");
+    background-image: url("../img/fire.gif");
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: contain;
@@ -5622,7 +5737,7 @@ strong {
 
 .draggable-sticker .draggable-sticker-desktop-unvrs-content,
 .draggable-sticker .draggable-sticker-mobile-unvrs-content{
-    background-image: url("../images/sticker-unvrs.png");
+    background-image: url("../img/unvrs.png");
     transform: rotate(16deg);
 }
 
@@ -7015,7 +7130,7 @@ strong {
 .draggable-sticker-desktop-home-club-content {
     width: 20.89vh;
     height: 15.67vh;
-    background-image: url("../images/sticker-club.png");
+    background-image: url("../img/bani.png");
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: contain;
@@ -7367,7 +7482,7 @@ strong {
     }
 
     .world {
-        background-image: url("../images/icon-world.svg");
+        background-image: url("../img/icon-world.svg");
         background-position: 0 0;
         background-repeat: no-repeat;
         background-size: contain;
@@ -10600,7 +10715,7 @@ strong {
 
 @media screen and (max-width: 479px) {
     .logo-mobile {
-        background-image: url("../images/vicio2.svg");
+        background-image: url("../img/logo.png");
     }
 
     .mobile-burger-paper {
