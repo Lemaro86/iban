@@ -314,7 +314,7 @@ strong {
     text-transform: uppercase;
     white-space: nowrap;
     color: var(--black);
-    font-size: 8.5vh;
+    font-size: 14.5vh;
     line-height: 10.96vh;
     transition: transform 0.5s cubic-bezier(0.65, 0, 0.35, 1);
 }
@@ -402,10 +402,34 @@ strong {
     position: relative;
 }
 
-.picture-box-1 {
+.picture-box-1,
+.picture-box-gallery {
     width: 38vh;
     height: 44vh;
     position: relative;
+}
+
+.img-rouletka {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.img-rouletka img,
+.img-rouletka video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.img-rouletka img.is-active,
+.img-rouletka video.is-active {
+    opacity: 1;
 }
 
 .div-block-11 {
@@ -574,6 +598,7 @@ strong {
     color: var(--black);
     transform: rotate(-45deg);
     transition: transform 0.35s ease;
+    margin-left: 63px;
 }
 
 .link-block:hover .cities-arrow,
@@ -599,6 +624,15 @@ strong {
     height: auto;
     max-height: 100%;
     object-fit: contain;
+}
+
+@keyframes cities-frame-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(-360deg); }
+}
+
+.box-4:hover .cities-frame img {
+    animation: cities-frame-spin 2s linear infinite;
 }
 
 .burger-cities {
@@ -7137,9 +7171,9 @@ strong {
     transform: rotate(-8deg);
 }
 
-.draggable-sticker-desktop-home-club-content:hover {
-    background-image: url("../images/sticker-club-hover.png");
-}
+/*.draggable-sticker-desktop-home-club-content:hover {*/
+/*    background-image: url("../images/sticker-club-hover.png");*/
+/*}*/
 
 /* Mobile stickers */
 

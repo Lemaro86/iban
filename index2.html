@@ -200,8 +200,8 @@ href="#"
                                             </div>
                                             <div class="collection-link-wrapper">
                                                 <div class="collection-scroll-wrapper">
-                                                    <div class="collection-text collection-line-default">Коллекция</div>
-                                                    <div class="collection-text collection-line-hover">Коллекция</div>
+                                                    <div class="collection-text collection-line-default">Меню</div>
+                                                    <div class="collection-text collection-line-hover">Меню</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -246,20 +246,19 @@ href="#"
                                     </div>
                                 </div>
                             </div>
+                        </div>
                             <div style="opacity:0" class="box-5">
-                                <div class="picture-box-1">
-                                    <div class="w-embed">
-                                        <video autoplay="" muted="" loop="" playsinline="" width="100%" height="100%"
-                                               id="video3">
-                                            <source src="https://cdn.deliclever.com/viciocdn/ganasdevicio/64aeae4d44364ffd96bf696a_VICIO-Web-01.mp4"
-                                                    type="video/mp4">
-                                            Your browser does not support the video tag.
-                                        </video>
+                                <div class="picture-box-gallery">
+                                    <div class="img-rouletka">
+                                        <img src="img/girl.png" class="is-active" alt=""/>
+                                        <img src="img/bani1.png" alt=""/>
+                                        <img src="img/bani2.png" alt=""/>
+                                        <img src="img/bani3.png" alt=""/>
+                                        <img src="img/bani4.png" alt=""/>
+                                        <img src="img/bani5.png" alt=""/>
+                                        <video src="img/vid.mp4" muted playsinline preload="none"></video>
                                     </div>
-                                    <img src="images/picture-1-tiny.jpg" loading="lazy" width="356"
-                                         sizes="(max-width: 767px) 100vw, 760px" alt=""
-                                         srcset="images/picture-1-tiny-p-500.jpg 500w, images/picture-1-tiny.jpg 712w"
-                                         class="image"></div>
+                                </div>
                                 <div class="picture-box-2">
                                     <div class="div-block-37">
                                         <div class="band-wrapper">
@@ -1095,7 +1094,7 @@ href="/faqs" class="w-inline-block">
     </div>
 </div>
 <div class="w-embed w-script">
-    <script>const boxes = [document.querySelector(".picture-box-1"), document.querySelector(".picture-box-3"), document.querySelector(".item-mobile-1"), document.querySelector(".item-mobile-3")];
+    <script>const boxes = [document.querySelector(".picture-box-3"), document.querySelector(".item-mobile-1"), document.querySelector(".item-mobile-3")];
     boxes.forEach((e => {
         const i = e.querySelector("video"), t = e.querySelector("img") || e.querySelector(".item-mobile-picture");
         i.style.visibility = "hidden", e.addEventListener("pointerenter", (function () {
@@ -1156,7 +1155,7 @@ requestAnimationFrame(raf)</script>
         Draggable.create(e, {type: "x,y", edgeResistance: .85, zIndexBoost: !1})
     }))
 }</script>
+    <script src="js/img-rouletka.js"></script>
     <script src="js/reveal.js"></script>
-</div>
 </body>
 </html>
