@@ -8,9 +8,22 @@
 Чистый HTML/CSS/JS. Никаких фреймворков, сборщиков, npm-зависимостей.
 
 ## Структура файлов
-- index.html — разметка
-- style.css — все стили
-- script.js — вся логика (скролл, drag-and-drop, рендер меню)
+- index.html — разметка; в конце подключаются скрипты из js/ и
+  несколько инлайн-скриптов (горизонтальный скролл Lenis, слайдеры, drag стикеров)
+- css/ — стили, подключаются в index.html в таком порядке:
+  - n.css — normalize
+  - v.css — основные стили сайта; в начале @import шрифта Roboto
+    с Google Fonts (единственный шрифт на сайте)
+  - d.css — базовые стили Webflow (w-*)
+  - t.css — стили слайдера tiny-slider (tns-*)
+- js/ — скрипты:
+  - библиотеки: jquery-3.5.1.min.js, webflow.js, jqmouse.js, lenis.js,
+    tiny.js (tiny-slider), gsap.js, scrolltrigger.js, drag.js, inertia.js
+  - свои: img-rouletka.js (слайдшоу фото по наведению), reveal.js,
+    rounded-text.js, hover-video.js (показ видео вместо фото по наведению)
+- img/ — изображения и видео (сюда же класть реальные фото)
+- videos/ — видео
+- menu.json — сейчас не подключён в index.html
 
 ## Данные компании
 Адрес: Москва, проспект Мира, 211, корп. 2 (ТРЦ Europolis)

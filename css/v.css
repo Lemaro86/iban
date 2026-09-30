@@ -1,3 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap&subset=cyrillic");
+
+/* Шрифт по умолчанию для всего, где font-family не задан явно */
+html body,
+button,
+input,
+select,
+textarea {
+    font-family: "Roboto", sans-serif;
+}
+
 :root {
     --black: black;
     --white: white;
@@ -74,7 +85,7 @@
 
 body {
     color: #333;
-    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-family: "Roboto", Arial, sans-serif;
     font-size: 14px;
     line-height: 20px;
 }
@@ -82,7 +93,7 @@ body {
 h2 {
     margin-top: 20px;
     margin-bottom: 10px;
-    font-family: Helvetica Neue Condensed, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 32px;
     font-weight: 700;
     line-height: 36px;
@@ -99,7 +110,7 @@ h3 {
 h4 {
     margin-top: 2vh;
     margin-bottom: 1vh;
-    font-family: Helvetica Neue Condensed, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
@@ -242,7 +253,7 @@ strong {
 
 .text-block {
     color: var(--black);
-    font-family: Helvetica Neue Condensed, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.4vh;
     font-weight: 700;
     line-height: 1.51vh;
@@ -302,7 +313,7 @@ strong {
 .collection-text {
     width: 100%;
     height: 100%;
-    font-family: Helvetica Neue Condensed, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 700;
     text-transform: uppercase;
     white-space: nowrap;
@@ -362,7 +373,7 @@ strong {
     color: var(--black);
     margin-left: 0.43px;
     margin-right: 0.43vh;
-    font-family: Helvetica Neue, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.08vh;
     line-height: 1.51vh;
     display: inline-block;
@@ -373,7 +384,7 @@ strong {
     text-transform: uppercase;
     border-bottom: 1px solid #0000;
     margin-right: 0.43vh;
-    font-family: Helvetica Neue, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.08vh;
     font-weight: 400;
     line-height: 1.51vh;
@@ -549,7 +560,7 @@ strong {
 .text-block-2 {
     color: var(--black);
     text-transform: uppercase;
-    font-family: Helvetica Neue Condensed, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 25.29vh;
     font-weight: 700;
     line-height: 25.29vh;
@@ -799,7 +810,7 @@ strong {
     display: inline-block;
     transform: rotate(calc(var(--angle, 0) * 1deg)) translateY(-50px);
     transform-origin: 0 0;
-    font-family: "Helvetica Neue Condensed", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 9px;
     font-weight: 700;
     letter-spacing: 0;
@@ -815,7 +826,7 @@ strong {
     display: inline-block;
     transform: rotate(calc(var(--angle, 0) * 1deg)) translateY(-40px);
     transform-origin: 0 0;
-    font-family: "Helvetica Neue Condensed", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 9px;
     font-weight: 700;
     letter-spacing: 0;
@@ -1033,7 +1044,7 @@ strong {
 .link {
     color: var(--black);
     text-transform: uppercase;
-    font-family: Helvetica Neue Condensed, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.51vh;
     font-weight: 700;
     line-height: 1.83vh;
@@ -1049,7 +1060,7 @@ strong {
 .link-2 {
     color: var(--black);
     text-transform: uppercase;
-    font-family: Helvetica Neue, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.08vh;
     font-weight: 400;
     line-height: 1.32vh;
@@ -1167,7 +1178,7 @@ strong {
 
 .text-block-3 {
     color: var(--black);
-    font-family: Helvetica Neue, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.08vh;
     font-weight: 400;
     line-height: 1.51vh;
@@ -1175,7 +1186,7 @@ strong {
 
 .link-3 {
     color: var(--black);
-    font-family: Helvetica Neue Condensed, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.4vh;
     font-weight: 700;
     line-height: 1.51vh;
@@ -1283,7 +1294,7 @@ strong {
 }
 
 .too-img-stripe-item {
-    font-family: Helvetica Neue Condensed, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 900;
     font-size: 6.07vh;
     line-height: 1;
@@ -1356,7 +1367,7 @@ strong {
 
 .text-block-4 {
     text-transform: uppercase;
-    font-family: Helvetica Neue Condensed, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.4vh;
     font-weight: 700;
     line-height: 1.51vh;
@@ -1430,7 +1441,7 @@ strong {
     text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 0;
-    font-family: Helvetica Neue Condensed, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 10.81vh;
     font-weight: 700;
     line-height: 9.72vh;
@@ -1512,7 +1523,7 @@ strong {
 }
 
 .slider-nav-text {
-    font-family: Helvetica Neue, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.4vh;
     font-weight: 400;
     line-height: 1.4vh;
@@ -1546,7 +1557,7 @@ strong {
 .text-block-6 {
     color: var(--black);
     text-transform: uppercase;
-    font-family: Helvetica Neue, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.29vh;
     font-weight: 400;
     line-height: 1.51vh;
@@ -1580,7 +1591,7 @@ strong {
 .text-block-7 {
     color: var(--black);
     text-transform: uppercase;
-    font-family: Helvetica Neue Condensed, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.4vh;
     font-weight: 700;
     line-height: 1.51vh;
@@ -1607,7 +1618,7 @@ strong {
     background-size: contain;
     width: 10.81vh;
     height: 4.1vh;
-    font-family: Recoleta, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.29vh;
     font-weight: 700;
     line-height: 1.72vh;
@@ -1643,7 +1654,7 @@ strong {
 .top-item-text {
     color: var(--black);
     text-transform: uppercase;
-    font-family: Helvetica Neue Condensed, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.4vh;
     font-weight: 700;
     line-height: 1.72vh;
@@ -1691,7 +1702,7 @@ strong {
     background-size: cover;
     width: 10.81vh;
     padding: 1.29vh;
-    font-family: Recoleta, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.29vh;
     font-weight: 700;
     line-height: 1.72vh;
@@ -1711,7 +1722,7 @@ strong {
     color: var(--vicio-red);
     text-transform: uppercase;
     padding: 0.5em 1em;
-    font-family: Recoleta, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.29vh;
     font-weight: 700;
     line-height: 1.72vh;
@@ -1740,7 +1751,7 @@ strong {
     color: var(--black);
     text-transform: uppercase;
     border-bottom: 1px solid #0000;
-    font-family: Helvetica Neue, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.08vh;
     font-weight: 400;
     line-height: 1.51vh;
@@ -1757,7 +1768,7 @@ strong {
     color: var(--black);
     margin-left: 0.43vh;
     margin-right: 0.43vh;
-    font-family: Helvetica Neue, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.08vh;
     line-height: 1.51vh;
 }
@@ -1837,7 +1848,7 @@ strong {
 
 .nike-text-mobile {
     text-transform: uppercase;
-    font-family: Helvetica Neue Condensed, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.4vh;
     font-weight: 700;
     line-height: 1.51vh;
@@ -1895,7 +1906,7 @@ strong {
     text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 0;
-    font-family: Helvetica Neue Condensed, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 11.2vw;
     font-weight: 700;
     line-height: 10.13vw;
@@ -1968,7 +1979,7 @@ strong {
     background-size: cover;
     width: 10.81vh;
     padding: 1.29vh;
-    font-family: Recoleta, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.29vh;
     font-weight: 700;
     line-height: 1.72vh;
@@ -2017,7 +2028,7 @@ strong {
 
 .link-back-text {
     text-transform: uppercase;
-    font-family: Helvetica Neue Condensed, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 2.16vh;
     font-weight: 700;
     line-height: 1.51vh;
@@ -2076,7 +2087,7 @@ strong {
 
 .text-1 {
     color: var(--black);
-    font-family: Helvetica Neue, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.29vh;
     font-weight: 400;
     line-height: 1.51vh;
@@ -2136,7 +2147,7 @@ strong {
 .text-3 {
     color: var(--black);
     text-transform: uppercase;
-    font-family: Helvetica Neue Condensed, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.29vh;
     font-weight: 700;
     line-height: 1.51vh;
@@ -2186,7 +2197,7 @@ strong {
 .heading-3 {
     color: var(--black);
     text-transform: uppercase;
-    font-family: Helvetica Neue Condensed, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 7.56vh;
     font-weight: 700;
     line-height: 7.56vh;
@@ -2204,7 +2215,7 @@ strong {
     color: var(--black);
     text-transform: uppercase;
     max-width: 16vh;
-    font-family: Helvetica Neue Condensed, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.4vh;
     font-weight: 700;
     line-height: 1.51vh;
@@ -2330,7 +2341,7 @@ strong {
 .product-link-products {
     color: var(--black);
     text-align: right;
-    font-family: Helvetica Neue, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.08vh;
     font-weight: 400;
     line-height: 1.51vh;
@@ -2459,7 +2470,7 @@ strong {
     border-radius: 2px;
     margin-top: 0;
     margin-bottom: 0;
-    font-family: Helvetica Neue Condensed, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 3.24vh;
     font-weight: 700;
     line-height: 3.89vh;
@@ -2474,7 +2485,7 @@ strong {
     text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 0;
-    font-family: Helvetica Neue Condensed, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 2.16vh;
     font-weight: 700;
     line-height: 2.81vh;
@@ -2486,7 +2497,7 @@ strong {
 
 .text-7 {
     color: var(--black);
-    font-family: Helvetica Neue, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.4vh;
     font-weight: 400;
     line-height: 1.72vh;
@@ -2510,7 +2521,7 @@ strong {
 .text-3-red {
     color: var(--vicio-red);
     text-transform: uppercase;
-    font-family: Helvetica Neue Condensed, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.29vh;
     font-weight: 700;
     line-height: 1.51vh;
@@ -2518,7 +2529,7 @@ strong {
 
 .text-3-black {
     text-transform: uppercase;
-    font-family: Helvetica Neue Condensed, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.29vh;
     font-weight: 700;
     line-height: 1.51vh;
@@ -2668,7 +2679,7 @@ strong {
 .footer-link-text {
     color: var(--black);
     text-transform: uppercase;
-    font-family: Helvetica Neue Condensed, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.51vh;
     font-weight: 700;
     line-height: 1.83vh;
@@ -2677,7 +2688,7 @@ strong {
 .footer-link-text-small {
     color: var(--black);
     text-transform: uppercase;
-    font-family: Helvetica Neue, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.08vh;
     font-weight: 400;
 }
@@ -2757,7 +2768,7 @@ strong {
     max-width: 10.81vh;
     margin-top: 0;
     margin-bottom: 0;
-    font-family: Helvetica Neue Condensed, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.4vh;
     font-weight: 700;
     line-height: 1.51vh;
@@ -2774,7 +2785,7 @@ strong {
     align-items: center;
     width: 10.81vh;
     height: 4.1vh;
-    font-family: Recoleta, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.29vh;
     font-weight: 700;
     line-height: 1.72vh;
@@ -2811,7 +2822,7 @@ strong {
     max-width: 10.81vh;
     margin-top: 0;
     margin-bottom: 0;
-    font-family: Helvetica Neue Condensed, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.4vh;
     font-weight: 700;
     line-height: 1.51vh;
@@ -2841,7 +2852,7 @@ strong {
     color: var(--black);
     text-transform: uppercase;
     margin-right: 0.8vh;
-    font-family: Helvetica Neue Condensed, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.29vh;
     font-weight: 700;
     line-height: 1.51vh;
@@ -2854,7 +2865,7 @@ strong {
     color: var(--black);
     text-indent: 7vh;
     max-width: 43.24vh;
-    font-family: Helvetica Neue, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.29vh;
     font-weight: 400;
     line-height: 1.51vh;
@@ -3251,7 +3262,7 @@ strong {
     text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 0;
-    font-family: Helvetica Neue Condensed, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 3.24vh;
     font-weight: 700;
     line-height: 3.89vh;
@@ -3259,7 +3270,7 @@ strong {
 
 .text-1-white {
     color: var(--white);
-    font-family: Helvetica Neue, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.29vh;
     font-weight: 400;
     line-height: 1.51vh;
@@ -3292,7 +3303,7 @@ strong {
 .text-3-white {
     color: var(--white);
     text-transform: uppercase;
-    font-family: Helvetica Neue Condensed, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.29vh;
     font-weight: 700;
     line-height: 1.51vh;
@@ -3557,7 +3568,7 @@ strong {
 
 .faqs-question-text {
     text-transform: uppercase;
-    font-family: Helvetica Neue Condensed, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 2.59vh;
     font-weight: 700;
     line-height: 3.24vh;
@@ -3675,7 +3686,7 @@ strong {
 
 .faqs-answer-text {
     color: var(--white);
-    font-family: Helvetica Neue, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.72vh;
     font-weight: 400;
     line-height: 1.94vh;
@@ -3746,7 +3757,7 @@ strong {
 .text-12 {
     color: var(--black);
     text-transform: uppercase;
-    font-family: Helvetica Neue Condensed, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 3.24vh;
     font-weight: 700;
     line-height: 3.45vh;
@@ -4102,7 +4113,7 @@ strong {
 .jobs-text-white {
     color: var(--white);
     text-transform: uppercase;
-    font-family: Helvetica Neue Condensed, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 3.89vh;
     font-weight: 700;
     line-height: 4.75vh;
@@ -4131,7 +4142,7 @@ strong {
 .jobs-text-white-big {
     color: var(--white);
     text-transform: uppercase;
-    font-family: Helvetica Neue Condensed, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 5.4vh;
     font-weight: 700;
     line-height: 6.48vh;
@@ -4228,7 +4239,7 @@ strong {
     color: var(--white);
     text-align: justify;
     text-transform: uppercase;
-    font-family: Helvetica Neue Condensed, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 0.97vh;
     font-weight: 700;
     line-height: 1.18vh;
@@ -4305,7 +4316,7 @@ strong {
 
 .faqs-question-text-mobile {
     text-transform: uppercase;
-    font-family: Helvetica Neue Condensed, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 2.59vh;
     font-weight: 700;
     line-height: 3.24vh;
@@ -4398,7 +4409,7 @@ strong {
 .jobs-text-white-big-mobile {
     color: var(--white);
     text-transform: uppercase;
-    font-family: Helvetica Neue Condensed, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 5.4vh;
     font-weight: 700;
     line-height: 6.48vh;
@@ -4427,7 +4438,7 @@ strong {
     border-radius: 2em;
     padding-top: 1.39vh;
     padding-bottom: 1.19vh;
-    font-family: Recoleta, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.29vh;
     font-weight: 700;
     text-decoration: none;
@@ -4550,7 +4561,7 @@ strong {
     width: 98vh;
     padding-top: 2.81vh;
     padding-bottom: 0;
-    font-family: Helvetica Neue, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
     display: block;
 }
@@ -4670,7 +4681,7 @@ strong {
 .wg-button-2-lang-wrapper {
     justify-content: center;
     align-items: center;
-    font-family: Helvetica Neue, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.08vh;
     font-weight: 400;
     line-height: 1.29vh;
@@ -4729,7 +4740,7 @@ strong {
 .footer-link-text-alt {
     color: var(--white);
     text-transform: uppercase;
-    font-family: Helvetica Neue Condensed, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.51vh;
     font-weight: 700;
     line-height: 1.83vh;
@@ -4754,7 +4765,7 @@ strong {
 .footer-link-text-small-text {
     color: var(--white);
     text-transform: uppercase;
-    font-family: Helvetica Neue, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.08vh;
     font-weight: 400;
 }
@@ -4809,7 +4820,7 @@ strong {
 .top-item-text-alt {
     color: var(--white);
     text-transform: uppercase;
-    font-family: Helvetica Neue Condensed, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.4vh;
     font-weight: 700;
     line-height: 1.72vh;
@@ -4825,7 +4836,7 @@ strong {
     width: 15vh;
     padding-top: 1.39vh;
     padding-bottom: 1.19vh;
-    font-family: Recoleta, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.29vh;
     font-weight: 700;
     text-decoration: none;
@@ -4946,7 +4957,7 @@ strong {
 .cc-title {
     color: var(--white);
     text-align: center;
-    font-family: Recoleta, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.18vh;
     font-weight: 700;
     line-height: 1.51vh;
@@ -4955,7 +4966,7 @@ strong {
 .cc-text-description {
     color: var(--white);
     text-align: center;
-    font-family: Helvetica Neue Condensed, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 0.97vh;
     font-weight: 700;
     line-height: 1.08vh;
@@ -4980,7 +4991,7 @@ strong {
 
 .cc-text {
     text-align: center;
-    font-family: Recoleta, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.19vh;
     font-weight: 700;
     line-height: 1.19vh;
@@ -5036,7 +5047,7 @@ strong {
 .home-burger-text {
     color: var(--black);
     text-align: right;
-    font-family: Helvetica Neue Condensed, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.4vh;
     font-weight: 700;
     line-height: 1.51vh;
@@ -5239,7 +5250,7 @@ strong {
 
 .dropdown-toggle-text {
     color: var(--black);
-    font-family: Helvetica Neue, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.72vh;
     font-weight: 400;
     line-height: 2.16vh;
@@ -5263,7 +5274,7 @@ strong {
 .dropdown-link {
     color: var(--black);
     padding: 2.16vh 1.8vh;
-    font-family: Helvetica Neue, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.72vh;
     font-weight: 400;
     line-height: 2.16vh;
@@ -5348,7 +5359,7 @@ strong {
 
 .text-block-24 {
     color: var(--white);
-    font-family: Helvetica Neue, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.72vh;
     font-weight: 400;
     line-height: 2.16vh;
@@ -5424,7 +5435,7 @@ strong {
 
 .dropdown-text {
     color: var(--black);
-    font-family: Helvetica Neue, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.72vh;
     font-weight: 400;
     line-height: 2.16vh;
@@ -5458,7 +5469,7 @@ strong {
 
 .order-now-button {
     color: var(--white);
-    font-family: Helvetica Neue, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
 }
 
@@ -5478,7 +5489,7 @@ strong {
     text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 0;
-    font-family: Helvetica Neue Condensed, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 3.24vh;
     font-weight: 700;
     line-height: 3.89vh;
@@ -5495,7 +5506,7 @@ strong {
     justify-content: center;
     align-items: center;
     width: auto;
-    font-family: Helvetica Neue, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.08vh;
     font-weight: 400;
     line-height: 1.29vh;
@@ -5658,7 +5669,7 @@ strong {
 
 .hours-rich {
     color: var(--white);
-    font-family: Helvetica Neue, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.2vh;
     font-weight: 400;
     line-height: 1.4vh;
@@ -5673,7 +5684,7 @@ strong {
     text-transform: uppercase;
     cursor: pointer;
     margin-top: 0.64vh;
-    font-family: Helvetica Neue Condensed, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.29vh;
     font-weight: 700;
     line-height: 1.51vh;
@@ -6361,7 +6372,7 @@ strong {
     text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 0;
-    font-family: Helvetica Neue Condensed, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 10.81vh;
     font-weight: 700;
     line-height: 9.72vh;
@@ -6391,7 +6402,7 @@ strong {
     justify-content: center;
     align-items: center;
     width: auto;
-    font-family: Helvetica Neue, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.08vh;
     font-weight: 400;
     line-height: 1.29vh;
@@ -6440,7 +6451,7 @@ strong {
 .cc-text-2 {
     text-align: center;
     text-transform: uppercase;
-    font-family: Recoleta, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.19vh;
     font-weight: 700;
     line-height: 1.19vh;
@@ -6461,7 +6472,7 @@ strong {
     margin-top: 0;
     margin-bottom: 0;
     margin-right: 2rem;
-    font-family: Helvetica Neue Condensed, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.778vh;
     font-weight: 700;
     line-height: 1.778vh;
@@ -6521,7 +6532,7 @@ strong {
     text-transform: uppercase;
     background-color: #0000;
     padding: 0;
-    font-family: Helvetica Neue Condensed, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 0.97vh;
     font-weight: 700;
     line-height: 1.08vh;
@@ -6542,7 +6553,7 @@ strong {
 .cc-title-2 {
     color: #fff;
     text-align: center;
-    font-family: Recoleta, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.18vh;
     font-weight: 700;
     line-height: 1.51vh;
@@ -6573,7 +6584,7 @@ strong {
     background-color: #fff;
     border-radius: 999rem;
     padding: 1vh 2vh;
-    font-family: Helvetica Neue Condensed, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 0.875rem;
     font-weight: 700;
 }
@@ -6585,7 +6596,7 @@ strong {
 .cc-text-description-2 {
     color: #fff;
     text-align: center;
-    font-family: Helvetica Neue Condensed, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 0.97vh;
     font-weight: 700;
     line-height: 1.08vh;
@@ -6597,7 +6608,7 @@ strong {
 
 .fs-cc-prefs_title {
     color: #ff1e0b;
-    font-family: Recoleta, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 2.778vh;
     font-weight: 700;
     line-height: 2.778vh;
@@ -6725,7 +6736,7 @@ strong {
     color: var(--white);
     text-transform: uppercase;
     padding: 0.54vh 1.08vh;
-    font-family: Helvetica Neue, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.08vh;
     line-height: 1.32vh;
 }
@@ -6757,7 +6768,7 @@ strong {
 .footer-link-text-small-copy {
     color: var(--black);
     text-transform: uppercase;
-    font-family: Helvetica Neue, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.08vh;
     font-weight: 400;
     line-height: 1.32vh;
@@ -6782,7 +6793,7 @@ strong {
     margin-top: 0;
     margin-bottom: 0;
     padding: 0.4vh 0.6vh 0.3vh;
-    font-family: Helvetica Neue Condensed, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.29vh;
     font-weight: 700;
     line-height: 1.29vh;
@@ -6818,7 +6829,7 @@ strong {
 .footer-link-text-small-2 {
     color: #000;
     text-transform: uppercase;
-    font-family: Helvetica Neue, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.08vh;
     font-weight: 400;
     line-height: 1.32vh;
@@ -6841,7 +6852,7 @@ strong {
 .footer-link-text-2 {
     color: #000;
     text-transform: uppercase;
-    font-family: Helvetica Neue Condensed, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.51vh;
     font-weight: 700;
     line-height: 1.83vh;
@@ -6940,7 +6951,7 @@ strong {
     border: 1px solid #000;
     border-radius: 999px;
     padding: 8px 20px;
-    font-family: Helvetica Neue Condensed, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     line-height: 20px;
     text-decoration: none;
@@ -6961,7 +6972,7 @@ strong {
 .legal-rich-text h3 {
     margin-top: 4vh;
     margin-bottom: 1vh;
-    font-family: Helvetica Neue Condensed, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 2.5vh;
     line-height: 3vh;
 }
@@ -6974,7 +6985,7 @@ strong {
 
 .legal-rich-text h5 {
     margin-top: 3vh;
-    font-family: Helvetica Neue Condensed, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.75vh;
     line-height: 1.8vh;
 }
@@ -6996,18 +7007,18 @@ strong {
     text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 20px;
-    font-family: Helvetica Neue Condensed, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 100px;
     line-height: 90px;
 }
 
 .legal-rich-text-block {
     color: var(--black);
-    font-family: Helvetica Neue, sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 .legal-rich-text-block h3 {
-    font-family: Helvetica Neue Condensed, sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 .legal-rich-text-block h4 {
@@ -7018,7 +7029,7 @@ strong {
 .legal-rich-text-block h5 {
     margin-top: 20px;
     margin-bottom: 8px;
-    font-family: Helvetica Neue Condensed, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 15px;
     line-height: 16px;
 }
@@ -7168,7 +7179,7 @@ strong {
     mix-blend-mode: difference;
     margin-top: 0;
     margin-bottom: 0;
-    font-family: Helvetica Neue Condensed, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 10.81vh;
     font-weight: 700;
     line-height: 9.72vh;
@@ -7182,7 +7193,7 @@ strong {
     color: #000;
     text-transform: uppercase;
     max-width: 16vh;
-    font-family: Helvetica Neue Condensed, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.4vh;
     font-weight: 700;
     line-height: 1.51vh;
@@ -7356,7 +7367,7 @@ strong {
 
     .text-block-10 {
         color: var(--black);
-        font-family: Helvetica Neue Condensed, sans-serif;
+        font-family: "Roboto", sans-serif;
         font-size: 3.2vw;
         font-weight: 700;
         line-height: 3.2vw;
@@ -7396,7 +7407,7 @@ strong {
 
     .text-block-11 {
         color: var(--black);
-        font-family: Helvetica Neue Condensed, sans-serif;
+        font-family: "Roboto", sans-serif;
         font-size: 2.93vw;
         font-weight: 700;
         line-height: 3.2vw;
@@ -7415,7 +7426,7 @@ strong {
     }
 
     .div-block-50 {
-        font-family: Helvetica Neue Condensed, sans-serif;
+        font-family: "Roboto", sans-serif;
         font-weight: 700;
         text-transform: uppercase;
         white-space: nowrap;
@@ -7435,7 +7446,7 @@ strong {
         color: var(--black);
         text-transform: uppercase;
         width: 66.83vw;
-        font-family: Helvetica Neue, sans-serif;
+        font-family: "Roboto", sans-serif;
         font-size: 2.4vw;
         font-weight: 400;
         line-height: 3.2vw;
@@ -7468,7 +7479,7 @@ strong {
 
     .vicio-bc {
         color: var(--black);
-        font-family: Helvetica Neue Condensed, sans-serif;
+        font-family: "Roboto", sans-serif;
         font-size: 3.2vw;
         font-weight: 700;
         line-height: 3.2vw;
@@ -7621,7 +7632,7 @@ strong {
     .text-block-13 {
         color: var(--black);
         text-align: right;
-        font-family: Helvetica Neue Condensed, sans-serif;
+        font-family: "Roboto", sans-serif;
         font-size: 2.93vw;
         font-weight: 700;
         line-height: 3.2vw;
@@ -7804,7 +7815,7 @@ strong {
 
     .text-block-14 {
         color: var(--black);
-        font-family: Helvetica Neue, sans-serif;
+        font-family: "Roboto", sans-serif;
         font-size: 2.4vw;
         font-weight: 400;
         line-height: 3.2vw;
@@ -7991,7 +8002,7 @@ strong {
         text-transform: uppercase;
         margin-top: 0;
         margin-bottom: 0;
-        font-family: Helvetica Neue Condensed, sans-serif;
+        font-family: "Roboto", sans-serif;
         font-size: 11.2vw;
         font-weight: 700;
         line-height: 10.13vw;
@@ -8016,7 +8027,7 @@ strong {
     .title-collection-mobile {
         margin-top: 0;
         margin-left: 6.93vw;
-        font-family: Helvetica Neue Condensed, sans-serif;
+        font-family: "Roboto", sans-serif;
         font-size: 3.46vw;
         font-weight: 700;
         line-height: 3.73vw;
@@ -8106,7 +8117,7 @@ strong {
         text-transform: none;
         margin-top: 1.6vw;
         margin-left: 6.93vw;
-        font-family: Helvetica Neue Condensed, sans-serif;
+        font-family: "Roboto", sans-serif;
         font-size: 3.46vw;
         font-weight: 700;
         line-height: 3.73vw;
@@ -8122,7 +8133,7 @@ strong {
         color: var(--black);
         text-transform: uppercase;
         width: 66.83vw;
-        font-family: Helvetica Neue, sans-serif;
+        font-family: "Roboto", sans-serif;
         font-size: 2.4vw;
         font-weight: 400;
         line-height: 3.2vw;
@@ -8158,7 +8169,7 @@ strong {
 
     .mobile-text-1 {
         color: var(--black);
-        font-family: Helvetica Neue, sans-serif;
+        font-family: "Roboto", sans-serif;
         font-size: 3.46vw;
         font-weight: 400;
         line-height: 4.26vw;
@@ -8168,7 +8179,7 @@ strong {
         color: var(--black);
         text-transform: uppercase;
         margin-right: 1.06vw;
-        font-family: Helvetica Neue Condensed, sans-serif;
+        font-family: "Roboto", sans-serif;
         font-size: 3.46vw;
         font-weight: 700;
         line-height: 4.26vw;
@@ -8177,7 +8188,7 @@ strong {
 
     .mobile-text-1-al2 {
         color: var(--black);
-        font-family: Helvetica Neue, sans-serif;
+        font-family: "Roboto", sans-serif;
         font-size: 3.46vw;
         font-weight: 400;
         line-height: 4.26vw;
@@ -8234,7 +8245,7 @@ strong {
 
     .text-block-19 {
         text-transform: uppercase;
-        font-family: Helvetica Neue Condensed, sans-serif;
+        font-family: "Roboto", sans-serif;
         font-size: 3.46vw;
         font-weight: 700;
         line-height: 3.73vw;
@@ -8285,7 +8296,7 @@ strong {
 
     .mobile-text-5 {
         color: var(--black);
-        font-family: Helvetica Neue Condensed, sans-serif;
+        font-family: "Roboto", sans-serif;
         font-size: 3.2vw;
         font-weight: 700;
         line-height: 3.46vw;
@@ -8331,7 +8342,7 @@ strong {
 
     .mobile-text-4 {
         color: var(--black);
-        font-family: Helvetica Neue, sans-serif;
+        font-family: "Roboto", sans-serif;
         font-size: 2.4vw;
         font-weight: 400;
         line-height: 3.2vw;
@@ -8402,7 +8413,7 @@ strong {
     .mobile-heading-5 {
         color: var(--black);
         text-transform: uppercase;
-        font-family: Helvetica Neue Condensed, sans-serif;
+        font-family: "Roboto", sans-serif;
         font-size: 8vw;
         font-weight: 700;
         line-height: 9.6vw;
@@ -8426,7 +8437,7 @@ strong {
     .text-block-20 {
         color: var(--black);
         text-transform: uppercase;
-        font-family: Helvetica Neue Condensed, sans-serif;
+        font-family: "Roboto", sans-serif;
         font-size: 5.33vw;
         font-weight: 700;
         line-height: 6.93vw;
@@ -8434,7 +8445,7 @@ strong {
 
     .text-block-21 {
         color: var(--black);
-        font-family: Helvetica Neue, sans-serif;
+        font-family: "Roboto", sans-serif;
         font-size: 3.46vw;
         font-weight: 400;
         line-height: 4.26vw;
@@ -8443,7 +8454,7 @@ strong {
     .mobile-text-cities {
         color: var(--black);
         text-transform: uppercase;
-        font-family: Helvetica Neue Condensed, sans-serif;
+        font-family: "Roboto", sans-serif;
         font-size: 3.2vw;
         font-weight: 700;
         line-height: 3.73vw;
@@ -8458,7 +8469,7 @@ strong {
     .mobile-text-cities-red {
         color: var(--vicio-red);
         text-transform: uppercase;
-        font-family: Helvetica Neue Condensed, sans-serif;
+        font-family: "Roboto", sans-serif;
         font-size: 3.2vw;
         font-weight: 700;
         line-height: 3.73vw;
@@ -8538,7 +8549,7 @@ strong {
     .link-mobile-menu {
         color: var(--white);
         text-transform: uppercase;
-        font-family: Helvetica Neue Condensed, sans-serif;
+        font-family: "Roboto", sans-serif;
         font-size: 14.4vw;
         font-weight: 700;
         line-height: 17.06vw;
@@ -8551,7 +8562,7 @@ strong {
 
     .mobile-link-4 {
         color: var(--black);
-        font-family: Helvetica Neue Condensed, sans-serif;
+        font-family: "Roboto", sans-serif;
         font-size: 2.93vw;
         font-weight: 700;
         line-height: 3.2vw;
@@ -8575,7 +8586,7 @@ strong {
     .top-title-collection-mobile-copy {
         margin-top: 0;
         margin-left: 0;
-        font-family: Helvetica Neue Condensed, sans-serif;
+        font-family: "Roboto", sans-serif;
         font-size: 3.46vw;
         font-weight: 700;
         line-height: 3.73vw;
@@ -8591,7 +8602,7 @@ strong {
         max-width: 33vw;
         margin-top: 0;
         margin-left: 6.93vw;
-        font-family: Helvetica Neue Condensed, sans-serif;
+        font-family: "Roboto", sans-serif;
         font-size: 3.46vw;
         font-weight: 700;
         line-height: 3.73vw;
@@ -8650,7 +8661,7 @@ strong {
     .mobile-text-8 {
         color: var(--black);
         text-transform: uppercase;
-        font-family: Helvetica Neue Condensed, sans-serif;
+        font-family: "Roboto", sans-serif;
         font-size: 4.26vw;
         font-weight: 700;
         line-height: 4.8vw;
@@ -8721,7 +8732,7 @@ strong {
         text-transform: uppercase;
         margin-top: 0;
         margin-bottom: 0;
-        font-family: Helvetica Neue Condensed, sans-serif;
+        font-family: "Roboto", sans-serif;
         font-size: 8vw;
         font-weight: 700;
         line-height: 9.6vw;
@@ -8729,7 +8740,7 @@ strong {
 
     .mobile-text-about-video-link {
         color: var(--black);
-        font-family: Helvetica Neue, sans-serif;
+        font-family: "Roboto", sans-serif;
         font-size: 2.4vw;
         font-weight: 400;
         line-height: 3.2vw;
@@ -8788,7 +8799,7 @@ strong {
     .mobile-text-3 {
         color: var(--black);
         text-transform: uppercase;
-        font-family: Helvetica Neue Condensed, sans-serif;
+        font-family: "Roboto", sans-serif;
         font-size: 3.46vw;
         font-weight: 700;
         line-height: 4.26vw;
@@ -8885,7 +8896,7 @@ strong {
         text-transform: uppercase;
         margin-top: 0;
         margin-bottom: 0;
-        font-family: Helvetica Neue Condensed, sans-serif;
+        font-family: "Roboto", sans-serif;
         font-size: 8vw;
         font-weight: 700;
         line-height: 9.6vw;
@@ -8893,7 +8904,7 @@ strong {
 
     .mobile-text-1-white {
         color: var(--white);
-        font-family: Helvetica Neue, sans-serif;
+        font-family: "Roboto", sans-serif;
         font-size: 3.46vw;
         font-weight: 400;
         line-height: 4.26vw;
@@ -8922,7 +8933,7 @@ strong {
     .mobile-text-3-white {
         color: var(--white);
         text-transform: uppercase;
-        font-family: Helvetica Neue Condensed, sans-serif;
+        font-family: "Roboto", sans-serif;
         font-size: 3.46vw;
         font-weight: 700;
         line-height: 4.26vw;
@@ -9226,7 +9237,7 @@ strong {
     .jobs-text {
         color: var(--black);
         text-transform: uppercase;
-        font-family: Helvetica Neue Condensed, sans-serif;
+        font-family: "Roboto", sans-serif;
         font-size: 4.26vw;
         font-weight: 700;
         line-height: 4.8vw;
@@ -9477,7 +9488,7 @@ strong {
     .jobs-text-white-mobile {
         color: var(--white);
         text-align: center;
-        font-family: Helvetica Neue Condensed, sans-serif;
+        font-family: "Roboto", sans-serif;
         font-size: 6.4vw;
         font-weight: 700;
         line-height: 7.46vw;
@@ -9580,7 +9591,7 @@ strong {
 
     .text-block-22 {
         text-align: center;
-        font-family: Recoleta, sans-serif;
+        font-family: "Roboto", sans-serif;
         font-size: 3.2vw;
         font-weight: 700;
         line-height: 4.26vw;
@@ -9590,7 +9601,7 @@ strong {
         color: var(--white);
         text-transform: uppercase;
         padding-bottom: 1.06vw;
-        font-family: Helvetica Neue, sans-serif;
+        font-family: "Roboto", sans-serif;
         font-size: 3.73vw;
         font-weight: 400;
         line-height: 4.26vw;
@@ -10052,7 +10063,7 @@ strong {
         color: var(--black);
         text-transform: uppercase;
         margin-top: 1.6vw;
-        font-family: Helvetica Neue Condensed, sans-serif;
+        font-family: "Roboto", sans-serif;
         font-size: 3.2vw;
         font-weight: 700;
         line-height: 3.73vw;
@@ -10655,7 +10666,7 @@ strong {
     .link-mobile-menu {
         color: var(--white);
         text-transform: uppercase;
-        font-family: Helvetica Neue Condensed, sans-serif;
+        font-family: "Roboto", sans-serif;
         font-size: 14.4vw;
         font-weight: 700;
         line-height: 17.06vw;
@@ -10708,27 +10719,6 @@ strong {
     grid-area: span 1 / span 1 / span 1 / span 1;
 }
 
-@font-face {
-    font-family: "Helvetica Neue Condensed";
-    src: url("/fonts/helvetica-neue-condensed-bold.woff") format("woff");
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: "Helvetica Neue";
-    src: url("/fonts/helvetica-neue.woff") format("woff");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: "recoleta";
-    src: url("/fonts/recoleta-black.woff") format("woff");
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
 
 /* VICIO Pide Ya */
 .vicio-pide-ya td {
