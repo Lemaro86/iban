@@ -3,10 +3,19 @@
 (() => {
     // Подстрока "opacity:0" не ищем — GSAP Draggable переписывает атрибут style
     // и браузер переформатирует его в "opacity: 0" (с пробелом), substring-селектор перестаёт совпадать.
-    const candidates = document.querySelectorAll('[style*="opacity"]');
+    const inlineHidden = Array.from(document.querySelectorAll('[style*="opacity"]'))
+        .filter((el) => el.style.opacity === '0');
+
+    // .vicio-fires: opacity:0 задан классом в v.css, а не инлайново — мимо
+    // инлайн-скана выше эти блоки не попадают и остаются невидимыми навсегда.
+    // Переносим их в инлайн-стиль, чтобы дальше они шли по общей логике.
+    const cssHidden = Array.from(document.querySelectorAll('.vicio-fires'))
+        .filter((el) => el.style.opacity !== '0' && getComputedStyle(el).opacity === '0');
+    cssHidden.forEach((el) => { el.style.opacity = '0'; });
+
+    const candidates = [...inlineHidden, ...cssHidden];
     const elements = [];
     candidates.forEach((el) => {
-        if (el.style.opacity !== '0') return;
         if (el.closest('.sticker-wrapper') || el.closest('.box-5')) {
             el.style.opacity = '1';
         } else {
