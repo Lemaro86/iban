@@ -807,12 +807,12 @@ strong {
     top: 0;
     left: 0;
     display: inline-block;
-    transform: rotate(calc(var(--angle, 0) * 1deg)) translateY(-6vh);
+    transform: rotate(calc(var(--angle, 0) * 1deg)) translateY(-50px);
     transform-origin: 0 0;
     font-family: "Helvetica Neue Condensed", sans-serif;
-    font-size: 0.95vh;
+    font-size: 9px;
     font-weight: 700;
-    letter-spacing: 0.02em;
+    letter-spacing: 0;
     text-transform: uppercase;
     white-space: pre;
     color: #000;
