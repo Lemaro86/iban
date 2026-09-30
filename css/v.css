@@ -773,21 +773,58 @@ strong {
 }
 
 .circle-vicio-0 {
-    background-image: url("../img/circle-vicio-0.svg");
+    background-image: url("../img/b.png");
     background-position: 50%;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 50%;
     position: absolute;
     inset: 0%;
 }
 
 .circle-vicio-1 {
-    background-image: url("../img/circle-vicio-1.svg");
+    background-image: url("../img/b.png");
     background-position: 50%;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 50%;
     position: absolute;
     inset: 0%;
+}
+
+.rounded_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    pointer-events: none;
+    z-index: 3;
+    animation: rounded-text-spin 14s linear infinite;
+}
+
+.rounded_text span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    transform: rotate(calc(var(--angle, 0) * 1deg)) translateY(-6vh);
+    transform-origin: 0 0;
+    font-family: "Helvetica Neue Condensed", sans-serif;
+    font-size: 0.95vh;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    white-space: pre;
+    color: #000;
+}
+
+@keyframes rounded-text-spin {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
 }
 
 .collection-link-block {
