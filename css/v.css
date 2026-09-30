@@ -791,7 +791,7 @@ strong {
     inset: 0%;
 }
 
-.rounded_text {
+.rounded_text,.rounded_text2 {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -809,6 +809,22 @@ strong {
     left: 0;
     display: inline-block;
     transform: rotate(calc(var(--angle, 0) * 1deg)) translateY(-50px);
+    transform-origin: 0 0;
+    font-family: "Helvetica Neue Condensed", sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    white-space: pre;
+    color: #000;
+}
+
+.rounded_text2 span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    transform: rotate(calc(var(--angle, 0) * 1deg)) translateY(-40px);
     transform-origin: 0 0;
     font-family: "Helvetica Neue Condensed", sans-serif;
     font-size: 9px;
@@ -1006,7 +1022,7 @@ strong {
 }
 
 .footer-left-links {
-    grid-column-gap: 4.75vh;
+    grid-column-gap: 1.75vh;
     grid-row-gap: 4.75vh;
     background-color: #ededed;
     border-radius: 4px;
@@ -1015,6 +1031,10 @@ strong {
     height: 3.45vh;
     padding: 0.81vh 1vh;
     display: flex;
+}
+
+.footer-left-links a {
+    white-space: nowrap;
 }
 
 .footer-left-links.cities {
@@ -7302,7 +7322,7 @@ strong {
 }
 
 .draggable-sticker-mobile-home-club-content {
-    background-image: url("../img/sticker-club.png");
+    background-image: url("../img/bani.png");
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: contain;
@@ -7312,7 +7332,7 @@ strong {
 }
 
 .draggable-sticker-mobile-home-club-content:hover {
-    background-image: url("../img/sticker-club-hover.png");
+    background-image: url("../img/bani.png");
 }
 
 .draggable-sticker-mobile-home-bigorder {
@@ -7588,17 +7608,20 @@ strong {
         display: flex;
     }
 
+    .div-block-49 a {
+        text-decoration: none;
+        height: 50px;
+    }
+
     .div-block-50 {
-        background-image: url("../img/collection-mobile.svg");
-        background-position: 0 0;
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 66.83vw;
-        height: 10.248vw;
-        margin-top: 1.1vw;
-        margin-bottom: 2.52vw;
-        padding-bottom: 0;
-        padding-right: 0;
+        font-family: Helvetica Neue Condensed, sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        white-space: nowrap;
+        color: var(--black);
+        font-size: 50px;
+        text-decoration: none;
+        height: 50px;
     }
 
     .link-products-mobile,
@@ -7659,10 +7682,10 @@ strong {
     }
 
     .div-block-53 {
-        background-image: url("../img/cities.svg");
-        background-position: 0 0;
+        background-image: url("../img/pizeria.svg");
+        background-position: 18px 0;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 220%;
         width: 100vw;
         height: 39.73vw;
         margin-top: 2.26vw;
@@ -7720,7 +7743,7 @@ strong {
     }
 
     .picture-1-mobile {
-        background-image: url("../img/picture-1.jpg");
+        background-image: url("../img/nobg.png");
         background-position: 0 0;
         background-repeat: no-repeat;
         background-size: contain;
@@ -7743,8 +7766,7 @@ strong {
         position: absolute;
     }
 
-    .picture-3-mobile {
-        background-image: url("../img/FOTO-1.png");
+    .picture-3-mobile,  .picture-44-mobile {
         background-position: 0 0;
         background-repeat: no-repeat;
         background-size: contain;
@@ -7890,8 +7912,7 @@ strong {
         transform: rotate(17deg);
     }
 
-    .this-is-vicio {
-        background-image: url("../img/picture-5.jpg");
+    .this-is-bani {
         background-position: 0 0;
         background-repeat: no-repeat;
         background-size: cover;
@@ -8031,7 +8052,7 @@ strong {
     }
 
     .div-block-74 {
-        background-image: url("../img/IMG.png");
+        background-image: url("../img/sipet.jpg");
         background-position: 0 0;
         background-repeat: no-repeat;
         background-size: cover;
@@ -8068,7 +8089,7 @@ strong {
     }
 
     .div-block-76 {
-        background-image: url("../img/arrow.svg");
+        background-image: url("../img/ar.svg");
         background-position: 0 0;
         background-repeat: no-repeat;
         background-size: contain;
@@ -8080,7 +8101,7 @@ strong {
     }
 
     .div-block-77 {
-        background-image: url("../img/IMG-5.png");
+        background-image: url("../img/italy.jpg");
         background-position: 0 0;
         background-repeat: no-repeat;
         background-size: contain;
@@ -10877,11 +10898,15 @@ strong {
     }
 
     .picture-1-mobile.item-mobile-picture {
-        background-image: url("../img/picture-1-tiny.jpg");
+        background-image: url("../img/girl.png");
     }
 
     .picture-3-mobile.item-mobile-picture {
-        background-image: url("../img/FOTO-1-tiny.png");
+        background-image: url("../img/bani1.png");
+    }
+
+    .picture-44-mobile {
+        background-image: url("../img/bani1.png");
     }
 
     .this-is-vicio {
@@ -10897,11 +10922,11 @@ strong {
     }
 
     .div-block-74 {
-        background-image: url("../img/IMG-tiny.png");
+        background-image: url("../img/sipet.jpg");
     }
 
     .div-block-77 {
-        background-image: url("../img/IMG-5-tiny.png");
+        background-image: url("../img/italy.jpg");
     }
 
     .pollos-hermanos {
