@@ -1164,16 +1164,22 @@ strong {
 }
 
 .banner {
+    /* ширина = 2 тайла картинки 1966x145 (1966 / 145 ≈ 13.559), чтобы шов не был виден */
+    --banner-h: 9.72vh;
+    flex-shrink: 0;
+    background-image: url("../img/runstring.png");
     background-position: 0 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 168.86vh;
-    height: 9.72vh;
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+    width: calc(var(--banner-h) * 27.117);
+    height: var(--banner-h);
 }
 
 .banner-content {
-    width: 337.72vh;
+    width: max-content;
     display: flex;
+    will-change: transform;
+    animation: stripeMarquee 20s linear infinite;
 }
 
 .text-block-3 {
@@ -1209,14 +1215,15 @@ strong {
 }
 
 .div-block-28 {
-    background-position: 100%;
+    background-image: url(../img/pizza-right.png);
+    background-position: 111px -131px;
     background-repeat: no-repeat;
-    background-size: contain;
-    width: 25.08vh;
-    height: 52.64vh;
+    background-size: 170%;
+    width: 800px;
+    height: 800px;
     position: absolute;
     bottom: -7vh;
-    right: 0;
+    right: 0px;
 }
 
 .home-sticker-1 {
@@ -1329,6 +1336,13 @@ strong {
     }
     to {
         transform: translateX(-50%);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .banner-content,
+    .banner-content-mobile {
+        animation: none;
     }
 }
 
@@ -1820,16 +1834,21 @@ strong {
 }
 
 .banner-content-mobile {
-    width: 337.72vh;
+    width: max-content;
     display: flex;
+    will-change: transform;
+    animation: stripeMarquee 20s linear infinite;
 }
 
 .banner-mobile {
+    --banner-h: 9.72vh;
+    flex-shrink: 0;
+    background-image: url("../img/runstring.png");
     background-position: 0 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 168.86vh;
-    height: 9.72vh;
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+    width: calc(var(--banner-h) * 27.117);
+    height: var(--banner-h);
 }
 
 .nike-mobile-wrapper {
@@ -7201,8 +7220,8 @@ strong {
 
 @media screen and (max-width: 991px) {
     .pollos-hermanos {
-        width: 120vw;
-        height: 108vw;
+        width: 600px;
+        height: 300px;
     }
 
     .legal-box-1,
@@ -7233,9 +7252,7 @@ strong {
     }
 
     .banner {
-        background-size: contain;
-        width: 241.24vw;
-        height: 13.9vw;
+        --banner-h: 13.9vw;
     }
 
     .heading-1 {
@@ -7741,13 +7758,8 @@ strong {
         top: 16vw;
     }
 
-    .banner-content-mobile {
-        width: 527.6vw;
-    }
-
     .banner-mobile {
-        width: 263.8vw;
-        height: 15.2vw;
+        --banner-h: 15.2vw;
     }
 
     .mobile-pack {
@@ -7917,14 +7929,15 @@ strong {
 
     .pollos-hermanos {
         z-index: 10;
-        background-position: 0 0;
+        background-image: url("../img/pizza-right.png");
+        background-position: -24px 2px;
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: 150%;
         padding-bottom: 0;
         padding-right: 0;
         position: absolute;
-        top: 54vw;
-        left: -11.6vw;
+        top: 126px;
+        left: -200px;
     }
 
     .pollos-wrapper {
